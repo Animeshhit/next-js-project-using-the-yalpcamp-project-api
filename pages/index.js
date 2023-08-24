@@ -3,7 +3,7 @@ import Card from "../component/Card";
 
 const API_URL = "https://yalpcamp.onrender.com/api/v1/posts";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   try {
     let APIREQ = await fetch(API_URL);
     let APIRES = await APIREQ.json();
