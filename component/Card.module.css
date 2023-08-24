@@ -1,0 +1,75 @@
+.card {
+  padding: 0.9rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  background: white;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  transition: 0.2s ease;
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 180px;
+  max-height: 200px;
+}
+
+.cardImage:hover {
+  object-position: center bottom;
+}
+
+.cardHeading {
+  font-size: 1.2rem;
+  margin: 0.7rem 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: capitalize;
+}
+
+.cardPara {
+  line-height: 1.6;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.cardButton {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  border-radius: 4px;
+  outline: none;
+}
+
+.cardButton:hover {
+  background-color: black;
+}
+
+.cardButton a {
+  display: block;
+  padding: 0.8rem 0;
+  color: unset;
+  text-decoration: none;
+}
+
+.cardButton:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .cardHeading {
+    font-size: 1rem;
+  }
+  .cardPara {
+    font-size: 0.8rem;
+  }
+  .cardButton {
+    font-size: 0.8rem;
+  }
+
+  .cardButton a {
+    padding: 0.7rem 0;
+  }
+}
